@@ -1,0 +1,108 @@
+*{
+
+ margin: 0;
+ top: 0;
+ box-sizing: border-box;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+@keyframes cc {
+    from {color: red;}
+    to {color: yellow;}
+  }
+  
+body {
+    background-image: url('.//images/op.jpg');
+    background-size: cover;
+    height: 1200px;
+    }
+   
+.top {
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: firebrick;
+    font-weight: 700;
+    text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+    
+}
+
+
+.center h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 90px;
+    animation: cc;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    justify-content: space-evenly;
+    justify-content: center;
+    transition: transform .3s;
+  }
+
+ .container a {
+     text-decoration: none;
+ }
+  
+ .container .OP  {
+    
+   
+    margin: 20px;
+    padding: 14px 20px;
+    color: black;
+    background-color: red;
+    
+   }
+ 
+
+   .container .Naru  {
+    
+    
+    margin: 20px;
+    padding: 14px 20px;
+    color: black;
+    background-color: yellow;
+    
+   }
+
+   .container .DB  {
+    
+    
+    margin: 20px;
+    padding: 14px 20px;
+    color: black;
+    background-color: orange;
+    
+   }
+   
+   .container .Hai  {
+    
+   
+    margin: 20px;
+    padding: 14px 20px;
+    color: black;
+    background-color: green;
+    
+   }
+.container :hover {
+       
+       transform: scale(1.3);
+}
+  
